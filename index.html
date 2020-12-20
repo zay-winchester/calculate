@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        button{
+            width: 70px;
+            height: 50px;
+            margin: 3px auto;
+            background-color: rgb(149, 240, 149);
+            font-size: 25px;
+            border-radius: 5px;
+        }
+        .data-del{
+            width: 218px;
+        }
+        #inputfield{
+            width: 284px;
+            height: 50px;
+            font-size: 30px;
+            padding: 3px;
+            border: 2px solid blueviolet;
+            border-radius: 4px;
+            outline: none;
+        } 
+        div{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%)translateY(-50%);
+            background:linear-gradient(to right,red,blue);
+            width: 100%;
+        }
+        #click{
+            display: block;
+            width: 100px;
+            height: 30px;
+            margin:35px auto;
+            line-height: 20px;
+            color: rgb(193, 42, 231);
+            outline: none;
+        }
+        p{
+          position: absolute;
+          bottom: 10px;
+          left: 25%;
+          font-size: 20px;
+          color: #ffff;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        h2{
+            position: absolute;
+            top: 120px;
+            right: 25px;
+        }
+        h3{
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 25px;
+        }
+        h4{
+            position: absolute;
+            top: 60px;
+            right: 25px;
+            font-size: 30px;
+        }
+        h5{
+            position: absolute;
+            top: 180px;
+            right: 25px;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form name="form">
+            <input name="textview" id="inputfield"autocomplete="off"><br>
+        </form>
+            <button class="data-multi" onclick="insert('*')">*</button>
+            <button class="data-devided" onclick="insert('/')">/</button>
+            <button class="data-plus" onclick="insert('+')">+</button>
+            <button class="data-minus" onclick="insert('-')">-</button><br>
+            <button class="data-number" onclick="insert(1)">1</button>
+            <button class="data-number" onclick="insert(2)">2</button>
+            <button class="data-number" onclick="insert(3)">3</button>
+            <button class="data-number" onclick="insert(4)">4</button><br>
+            <button class="data-number" onclick="insert(5)">5</button>
+            <button class="data-number" onclick="insert(6)">6</button>
+            <button class="data-number" onclick="insert(7)">7</button>
+            <button class="data-number" onclick="insert(8)">8</button><br>
+            <button class="data-number" onclick="insert(9)">9</button>
+            <button class="data-number" onclick="insert(0)">0</button>
+            <button class="data-number" onclick="insert('00')">00</button>
+            <button class="data-dot" onclick="insert('.')">.</button><br>
+            <button class="data-equals" onclick="equal()">=</button>
+            <button class="data-del" onclick="clean()">Delete</button>
+            <h1 style="text-align: center;">Developed By "Z"</h1>
+            <button id="click">click me</button>
+            <p></p>
+            <h3>Calculate</h3>
+            <h4>What</h4>
+            <h2>You</h2>
+            <h5>Want</h5>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
